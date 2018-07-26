@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { Route, extract } from '@app/core';
-import { HomeComponent } from '@app/home/home.component';
+import { EditorpageComponent } from './editorpage.component';
 
 const routes: Routes = [
   Route.withShell([
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent, data: { title: extract('Home') } }
+    { path: 'editor', component: EditorpageComponent, data: { title: extract('Editor') } }
   ])
 ];
 
@@ -16,4 +15,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class HomeRoutingModule { }
+export class EditorpageRoutingModule { }

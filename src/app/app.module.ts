@@ -6,14 +6,17 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { CKEditorModule } from 'ng2-ckeditor';
+
 import { environment } from '@env/environment';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
-import { HomeModule } from './home/home.module';
-import { AboutModule } from './about/about.module';
-import { LoginModule } from './login/login.module';
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { HomeModule } from '@app/home/home.module';
+import { AboutModule } from '@app/about/about.module';
+import { LoginModule } from '@app/login/login.module';
+import { AppComponent } from '@app/app.component';
+import { AppRoutingModule } from '@app/app-routing.module';
+import { EditorpageModule } from '@app/editorpage/editorpage.module';
 
 @NgModule({
   imports: [
@@ -24,9 +27,11 @@ import { AppRoutingModule } from './app-routing.module';
     TranslateModule.forRoot(),
     NgbModule.forRoot(),
     CoreModule,
+    CKEditorModule,
     SharedModule,
     HomeModule,
     AboutModule,
+    EditorpageModule,
     LoginModule,
     AppRoutingModule
   ],
