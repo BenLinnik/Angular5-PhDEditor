@@ -1,3 +1,17 @@
+# A smart editor I use to write my PhD and stay focused
+
+Todo list
+
+[x] Count words \
+[x] Count sentences \
+[x] Works with grammarly \
+[ ] Has persistent storage \
+[ ] User management \
+[ ] Word clouds \
+[ ] Performance analysis \
+[ ] Mood analysis \
+[ ] Go public 
+
 # ngX Starter Kit
 
 Web project starter kit including modern tools and workflow based on
